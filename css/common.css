@@ -1,0 +1,262 @@
+/* 搜索栏 */
+.aside{
+    height: 40px;
+    background-color: #7c1824;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+.search li {
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+}
+.search li a{
+    color: #fff;
+    cursor: pointer;
+}
+/* 搜索框 */
+.sea{
+    position: relative;
+}
+#sea{
+    width: 430px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    margin-top: 10px;
+    outline: none;
+    text-indent: 1em;
+}
+#sub{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 50px;
+    height: 20px;
+    border-radius:  0 20px 20px 0;
+    background-color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 12px;
+    outline: none;
+}
+
+
+/* 页脚 */
+.foot{
+    margin-top: 60px;
+    height: 450px;
+    background-color: #7c1824;
+}
+/* 友情链接 */
+.lins{
+    display: flex;
+    height: 280px;
+
+}
+.lins img{
+    width: 180px;
+    height: 160px;
+    margin-top: 80px;
+}
+
+.navigation h1{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.navigation p{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40px;
+    
+}
+.navigation a{
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+/* 链接 */
+.friendship h1{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 80px;
+    margin-left: 50px;
+
+}
+.friendship p{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.friendship a{
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+/* 版权信息 */
+.copyright{
+    margin-top: 60px;
+}
+.copyright p{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+
+}
+/* 导航栏 */
+.nav{
+    display: block;
+    height: 140px;
+	/* border: 1px solid; */
+}
+.nav-list{
+    width: 1200px;
+    height: 100px;
+	margin-top: 40px;
+}
+.nav-list img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+}
+.nav ul {
+	/* 定义ul样式 */
+    /* 消除小圆点 */
+    list-style:none;
+	width:1200px;
+	height:100px;
+    text-align: center;
+    /* top: 10px; */
+}
+.nav li {
+	width:150px;
+	height:60px;
+	background:#fff;
+	/* 定义往左浮动 */
+    float:left;
+    left: 50px;
+    top: 15px;
+	/* 设置相对定位 */
+    position:relative;
+	font-size:20px;
+	color:black;
+	/* 设置文字居中 */
+    text-align:center;
+	line-height:60px;
+	/* 鼠标样式改为小手 */
+    cursor:pointer;
+    margin-left: 0px;
+}
+.se{
+	/* 定义全部 section 属性 */
+        position:absolute;
+	/* 设置渐变 */
+        transition:0.5s;
+}
+.se a{
+    margin: 20px;
+    text-decoration:none ;
+    color: black;
+}
+.se a:hover{
+    color: #7e3337;
+}
+.nav li:hover {
+	/* 设置鼠标经过时改变li背景 */
+        background:rgba(41,41,41,0.274);
+}
+/* .one {
+	width:800px;
+	height:60px;
+    top:60px;
+    display:none;
+}
+.nav-list li:hover .one {
+    display:block;
+	background:#fff;
+} */
+.two {
+	width:800px;
+	/* 定义高度为0 */
+        height:0;
+	/* 相对与li进行定位，使section 与 ul 相对其   下同 */
+        left:-100px;
+	/* 因为高度为0，所以超出的部分被隐藏掉 */
+        overflow:hidden;
+}
+.nav-list li:hover .two {
+	/* 高度变为60px，内容会显示出来 */
+    height:60px;
+	background:rgb(240, 220, 119);
+    
+}
+.three {
+	/* 定义宽度为0 */
+        width:0;
+	height:60px;
+	left:-200px;
+	/* 因为宽度为0，所以超出的部分被隐藏掉 */
+        overflow:hidden;
+}
+.nav-list li:hover .three {
+	width:700px;
+	background:rgb(240, 220, 119);
+}
+.four {
+	width:0;
+	height:60px;
+	/* 相对与li进行定位，使section 与 ul 相对其  */
+       /* 此处用 right 而不用 left ，是为了使其改变起始方向 */
+    right:-300px;
+	/* 因为宽度为0，所以超出的部分被隐藏掉 */
+    overflow:hidden;
+}
+.nav-list li:hover .four {
+	width:700px;
+	background:rgb(240, 220, 119);
+}
+.five {
+	width:0;
+	height:0;
+	left:-400px;
+	/* 因为宽，高度为0，所以超出的部分被隐藏掉 */
+        overflow:hidden;
+}
+.nav-list li:hover .five {
+	width:700px;
+	height:60px;
+	background:rgb(240, 220, 119);
+}
+.six {
+	width:0;
+	height:0;
+	right:-100px;
+	/* 因为宽，高度为0，所以超出的部分被隐藏掉 */
+    overflow:hidden;
+}
+.nav-list li:hover .six {
+	width:700px;
+	height:60px;
+	background:rgb(240, 220, 119);
+}
+.seven {
+    
+	width:800px;
+	height:0;
+	left:-600px;
+	/* 此处定义 bottom 是为了改变起始位置从底部60px位置开始变高 */
+    bottom:-60px;
+	overflow:hidden;
+}
+.nav-list li:hover .seven {
+    margin-left: -50px;
+	height:60px;
+	background:rgb(240, 220, 119);
+}

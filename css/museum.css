@@ -1,0 +1,535 @@
+/* 轮播图 */
+.slide{ 
+    position: relative;
+}
+.swiper {
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    margin-top: 30px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* logo */
+.slide .logo{
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 30px;
+    height: 40px;
+}
+/* 文字内容 */
+.slide_con{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 485px;
+    height: 300px;
+    background-color: rgba(0,0,0,.6);
+}
+.slide_con p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+.slide_con span{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 30px;
+    padding: 10px 20px;
+}
+
+
+
+/* 资讯 */
+.information{
+    position: relative;
+    height: 370px;
+    margin-top: 75px;
+}
+/* 开放时间 */
+.infor{
+    font-size: 24px;
+}
+.open{
+    width: 265px;
+    height: 278px;
+    margin-top: 10px;
+    background-image: url(../img/博物馆与文物/open1.jpg);
+    box-shadow: 10px 10px 2px #cccccc;
+}
+.open div{
+    font-size: 20px;
+    padding: 20px 20px;
+}
+.open p{
+    font-size: 16px;
+    padding: 8px 20px;
+}
+/* 麻雀 */
+.mq1{
+    position: absolute;
+    left: 230px;
+    top: -20px;
+    width: 60px;
+}
+.mq2{
+    position: absolute;
+    left: 710px;
+    top: 17px;
+    width: 40px;
+}
+/* 购票咨询 */
+.buy{
+    position: absolute;
+    left: 250px;
+    margin-top: -250px;
+    width: 330px;
+    height: 230px;
+    background-color: #fff6ee;
+}
+.buy div{
+    font-size: 14px;
+}
+.buy li{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.buy span:nth-child(2n){
+    margin-left: 40px;
+}
+.buy p{
+    display: inline-block;
+    margin-top: 10px;
+}
+.buy p:nth-child(2){
+    margin-top: 10px;
+    margin-left: 37px;
+}
+.buy p a{
+    font-size: 14px;
+    color: #666;
+}
+/* 右图片 */
+.infor_con{
+    position: absolute;
+    left: 925px;
+    top: 50px;
+    width: 265px;
+    height: 278px;
+    box-shadow: 10px 10px 2px #cccccc;
+}
+/* 资讯信息 */
+.share{
+    position: absolute;
+    left: 700px;
+    top: 55px;
+}
+.share li{
+    width: 245px;
+    height: 30px;
+    padding: 0 5px 0px 10px;
+    background-color: #2d506f;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.share li a{
+    color: #fff;
+}
+
+
+
+/* 专馆 */
+.exhibition{
+    position: relative;
+    height: 810px;
+    margin-top: 80px;
+}
+.exhibition p{
+    font-size: 24px;
+}
+/* 麻雀 */
+.mq3{
+    position: absolute;
+    left: 500px;
+    top: -20px;
+    width: 70px;
+}
+.mq4{
+    position: absolute;
+    left: 700px;
+    bottom: 70px;
+    width: 50px;
+}
+/* 左边 */
+.exhibi_backg1{
+    position: absolute;
+    width: 600px;
+    height: 720px;
+    margin-top: 10px;
+    background-image: url(../img/博物馆与文物/bg1.jpg);
+}
+.exhibi_content{
+    width: 535px;
+    height: 665px;
+    background-color: #fff;
+    margin: 27px auto;
+}
+/* 上半部分 */
+.exhibi_con{
+    display: flex;
+    justify-content: space-around;
+    width: 510px;
+    height: 155px;
+    margin-top: 27px;
+}
+.exhibi_con li{
+    position: relative;
+    width: 155px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.exhibi_con li div{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 60px;
+    left: 30px;
+    background-color: rgba(0,0,0,.6);
+}
+.exhibi_con li div span{
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+    margin-left: 30px;
+}
+.exhibi_content li:hover div{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.exhibi_content li:hover div span{
+    color: #000;
+}
+/* 下半部分 */
+.exhibi_con2{
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+    height: 122px;
+    margin-top: 20px;
+}
+.exhibi_con2 li{
+    position: relative;
+    width: 245px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.exhibi_con2 li div{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 40px;
+    left: 70px;
+    background-color: rgba(0,0,0,.6);
+}
+.exhibi_con2 li div span{
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+    margin-left: 25px;
+}
+/* 右边 */
+.exhibi_backg2{
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 555px;
+    height: 677px;
+    background-image: url(../img/博物馆与文物/bg2.jpg);
+}
+.exhibi_activity{
+    width: 505px;
+    height: 630px;
+    background-color: #fff;
+    margin: 27px auto;
+}
+/* 展览 */
+.exhibi_activity p{
+    font-size: 24px;
+    text-align: center;
+    padding: 7px 0;
+}
+.notic{
+    position: relative;
+    display: flex;
+    width: 475px;
+    height: 268px;
+    margin-left: 15px;
+}
+.notic img{
+    width: 475px;
+}
+.notic div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,.6);
+}
+.notic span{
+    color: #fff;
+    line-height: 30px;
+}
+.notic span:nth-child(2){
+    margin-left: 160px;
+}
+/* 公告 */
+.notic2{
+    width: 475px;
+    height: 210px;
+    background-color: #829fb8;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+.notic2 ul{
+    width: 430px;
+    height: 140px;
+
+}
+.notic2 li {
+    height: 20px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.notic2 li a{
+    color: #fff;
+}
+.notic2 div{
+    display: inline-block;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+/* 文物 */
+.cultural{
+    position: relative;
+}
+/* 背景 */
+.bg3 {
+    width: 100%;
+    height: 320px;
+}
+/* 麻雀 */
+.collection .mq5{
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    width: 40px;
+}
+/* 藏品 */
+.collection{
+    position: relative;
+}
+.collect{
+    position: absolute;
+    top: -160px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+/* 文字 */
+.collect div{
+    font-size: 24px;
+    color: rgb(68, 68, 68);
+    text-align: left;
+    margin: 10px 20px;
+}
+.collect p{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 0px 15px;
+    color: rgb(68, 68, 68);
+}
+.collect p span a{
+    font-size: 16px;
+    margin-left: 20px;
+    color: rgb(68, 68, 68);
+}
+/* 文物图片 */
+.collect_icon{
+    position: relative;
+    height: 700px;
+}
+/* 麻雀 */
+.mq6{
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    width: 50px;
+}
+.mq7{
+    position: absolute;
+    bottom: 0px;
+    right: -70px;
+}
+/* 左边图片 */
+.coll_icon_l{
+    float: left;
+    width: 595px;
+    height: 680px;
+    
+}
+.coll_icon_l img{
+    width: 100%;
+    height: 100%;
+}
+.coll_icon_l li{
+    overflow: hidden;
+}
+.coll_icon_l img:hover{
+    transform: scale(1.1);
+
+}
+.coll_icon_l span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.icon1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+    height: 190px;
+}
+
+.icon1 li{
+    position: relative;
+}
+.icon1-1{
+    width: 365px;
+    background-color: #2d506f;    
+}
+.icon1-2{
+    width: 220px;
+    background-color: #829fb8;
+}
+.icon1 li div{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+
+.icon2{
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+    margin-top: 10px;
+}
+.icon2 li{
+    position: relative;
+    width: 190px;
+    background-color: #829fb8;
+}
+.icon2 li div{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+/* 右边图片 */
+.coll_icon_r{
+    float: left;
+    width: 595px;
+    height: 700px;
+    margin-left: 10px;
+}
+.coll_icon_r img{
+    width: 100%;
+    height: 100%;
+}
+.coll_icon_r li{
+    overflow: hidden;
+}
+.coll_icon_r img:hover{
+    transform: scale(1.1);
+
+}
+.coll_icon_r span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.icon3{
+    display: flex;
+    justify-content: space-between;
+    height: 190px;
+    margin-top: 10px;
+}
+.icon3 li{
+    position: relative;
+    width: 190px;
+    background-color: #829fb8;
+}
+.icon3 li div{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.icon4{
+    display: flex;
+    justify-content: space-between;
+    height: 190px;
+    margin-top: 10px;
+}
+.icon4 li{
+    position: relative;
+    width: 291px;
+    background-color: #829fb8;
+}
+.icon4 li div{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
